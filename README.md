@@ -30,23 +30,29 @@
 <img width="741" alt="dns" src="https://github.com/user-attachments/assets/b6207844-1077-498b-a19e-5b29ef37eb1e">
 
 <p>
-Create your two virtual machines, a windows server and a windows 10 within azure. The server will house active directory and  the windows 10 will act as your client. Make sure both vm's are on the same subnet. The server is named dc-1 and the windows 10 vm is named client-1. Dc-1 will also act as your DNS server, go into azure and make dc-1's private ip-address static. Then go to client-1 and set the dns server to dc-1 private ip-address. 
+Create your two virtual machines, a windows server and a windows 10 within azure. The server will house active directory and  the windows 10 will act as your client. Make sure both vm's are on the same subnet. The server is named dc-1 and the windows 10 vm is named client-1. Dc-1 will also act as your DNS server, go into azure and make dc-1's private ip-address static. Then go to client-1 and set the dns server to dc-1's private ip-address. 
 </p>
 <br />
 
 <p>
-<img width="748" alt="new forest" src="https://github.com/user-attachments/assets/a7543ae8-9bd8-4548-8796-9577dce66371">
-
+<img width="748" alt="new forest" src="https://github.com/user-attachments/assets/a7543ae8-9bd8-4548-8796-9577dce66371"></p>
+<p>
+  <img width="721" alt="OU" src="https://github.com/user-attachments/assets/e968ae49-9ff6-468a-94e0-1938015d3aa1">
 </p>
 <p>
-The windows server is named dc-1, and it has active directory 
-</p>
+Set up a new forest in dc-1 and then create a new organizational unit called _EMPLOYEES and another named _ADMINS. Create a new user and add them to the domain admins security group. logout of dc-1 and sign back in with your domain admin account.   </p>
 <br />
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img width="728" alt="c1-domain" src="https://github.com/user-attachments/assets/cc796f1a-70cb-4143-8574-3876221b56ab">
 </p>
+<img width="734" alt="domain users rdp" src="https://github.com/user-attachments/assets/025ae3e4-003b-4088-9e17-98550328290d">
+
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+  
+</p>
+Login to client-1 as a local admin and join the domain. Then create a new OU named _CLIENTS in dc-1, and drag client-1 into the new OU. Login to client-1 as a domain admin and enable remote desktop capabilities for domain users.This allows regular users the ability to access the domain remotely. 
+<p>
+
 </p>
 <br />
