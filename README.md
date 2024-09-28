@@ -56,3 +56,10 @@ Login to client-1 as a local admin and join the domain. Then create a new OU nam
 
 </p>
 <br />
+<P>
+  <img width="719" alt="user_employee" src="https://github.com/user-attachments/assets/cb2a8a94-73d5-4601-a9cd-6d2a47b9c351">
+
+</P>
+<P>
+  login to dc-1 as a domain admin and create users within the _EMPLOYEES organizational unit. To do so, you must create a script with multiple users and passwords and run it. Once that is done, try loging into client-1 using one of the accounts you created. 
+</P>
