@@ -26,15 +26,16 @@
 <h2>Deployment and Configuration Steps</h2>
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
+<img width="746" alt="AD DS" src="https://github.com/user-attachments/assets/e4df1c07-5c82-4945-8429-f9fc63fe061b"></p>
+
 <p>
-Create your two virtual machine 
+Create your two virtual machines, a windows server and a windows 10 within azure. The server will house active directory and  the windows 10 will act as your client. Make sure both vm's are on the same subnet. 
 </p>
 <br />
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img width="748" alt="new forest" src="https://github.com/user-attachments/assets/a7543ae8-9bd8-4548-8796-9577dce66371">
+
 </p>
 <p>
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
