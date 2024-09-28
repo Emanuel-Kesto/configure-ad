@@ -30,7 +30,7 @@
 <img width="741" alt="dns" src="https://github.com/user-attachments/assets/b6207844-1077-498b-a19e-5b29ef37eb1e">
 
 <p>
-Create your two virtual machines, a windows server and a windows 10 within azure. The server will house active directory and  the windows 10 will act as your client. Make sure both vm's are on the same subnet. The server is named dc-1 and the windows 10 vm is named client-1. Dc-1 will also act as your DNS server, go into azure and make dc-1's private ip-address static. Then go to client-1 and set the dns server to dc-1's private ip-address. 
+Create two virtual machines, a windows server and a windows 10 within azure. The server will house active directory and  the windows 10 will act as your client. Make sure both vm's are on the same subnet. The server is named dc-1 and the windows 10 vm is named client-1. Dc-1 will also act as your DNS server, go into azure and make dc-1's private ip-address static. Then go to client-1 and set the dns server to dc-1's private ip-address. 
 </p>
 <br />
 
